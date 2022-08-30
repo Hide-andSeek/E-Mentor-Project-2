@@ -5,32 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/global.css">
   <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  
+  <header >
+    <img class="h-auto w-full bg-cover bg-center z-0 absolute bg-blend-darken" src="./images/desktop/image-hero.jpg" alt="">
+    <nav class="flex justify-between mx-20 py-10 z-1">
+      <div>
+        <img src="./images/logo.svg" alt="Loop Studio">
+      </div>
+      <div>
+        <ul class="flex">  
+          <li class="px-5 text-white"><a href="#" class="font-semibold">About</a></li>
+          <li class="px-5 text-white"><a href="#" class="font-semibold">Careers</a></li>
+          <li class="px-5 text-white"><a href="#" class="font-semibold">Events</a></li>
+          <li class="px-5 text-white"><a href="#" class="font-semibold">Products</a></li>
+          <li class="px-5 text-white"><a href="#" class="font-semibold">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mx-24 py-20">
+      <h1 class="font-thin text-white px-10 py-5 text-7xl uppercase w-2/4 border-solid border-2 border-white-700">Immersive experiences that deliver</h1>
+    </div>
+  </header>
 
-  Immersive experiences that deliver
+  <main>
+    <div class=" flex justify-center px-20 pt-36">
+      <div class="bg-fixed">
+        <img class="" src="./images/desktop/image-interactive.jpg" alt="">
+      </div>
+      <div class="w-4/6 h-auto pt-24 right-28">
+        <h2 class="px-20 font-thin bg-white  pt-10 pb-5 text-5xl uppercase">The leader in interactive VR</h2>
+        <p class="px-20 bg-white pb-10">
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      </div>
+    </div>
 
-  The leader in interactive VR
+    <!-- Main Content -->
+    <div class="flex justify-between p-20">
+      <div>
+        <h2 class="text-4xl uppercase font-light">Our creations</h2>
+      </div>
+      <div>
+        <button class="uppercase bg-white border-solid border-2 border-gray-500 text-black w-32 rounded py-1 transition ease-in-out delay-150 hover:bg-black hover:text-white font-semibold">See all</button>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-4 gap-4 px-20 pb-32">
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-deep-earth.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"> <p class="text-4xl font-thin uppercase"> Deep <br> Earth</p></div>
+        </a>
+      </div>
+      
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-night-arcade.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"><p class=" text-4xl font-thin uppercase">Night <br> Arcade</p> </div>
+        </a>
+      </div>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-soccer-team.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"><p class=" text-4xl font-thin uppercase">Soccer <br> Team VR</p> </div>
+        </a>
+      </div>
 
-  Our creations
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-grid.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"><p class=" text-4xl font-thin uppercase">The <br> Grid</p> </div>
+        </a>
+      </div>
+
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-from-above.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"><p class=" text-4xl font-thin uppercase">From Up <br> Above VR</p> </div>
+        </a>
+      </div>
+
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-pocket-borealis.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"><p class=" text-4xl font-thin uppercase">Pocket <br>  Borealis</p> </div>
+        </a>
+      </div>
+
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-curiosity.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"><p class=" text-4xl font-thin uppercase">The <br> Curiosity</p> </div>
+        </a>
+      </div>
+
+      <div>
+        <a href="#" class="text-white transition ease-in-out hover:text-black">
+          <img class="hover:opacity-20 z-0 transition ease-in-out delay-150" src="./images/desktop/image-fisheye.jpg" alt="">
+          <div class="absolute bottom-0 py-16 pl-10  z-1"><p class=" text-4xl font-thin uppercase">Make it <br> Fisheye</p> </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-black">
+      <div class="flex justify-between px-20 pt-10">
+        <div>
+          <img class="w-32 h-auto" src="./images/logo.svg" alt="Loop Studio">
+        </div>
+        <div>
+          <nav>
+            <ul class="flex">
+              <li class="px-1"><a href="#"><i class="fa fa-facebook-square text-white text-2xl"></i></a></li>
+              <li class="px-1"><a href="#"><i class="fa fa-twitter text-white text-2xl"></i></a></li>
+              <li class="px-1"><a href=""><i class="fa fa-pinterest text-white text-2xl"></i></a></li>
+              <li class="px-1"><a href=""><i class="fa fa-instagram text-white text-2xl"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="px-20 pt-5 pb-10">
+          <nav>
+            <ul class="flex">
+              <li class="pr-4 text-white"><a href="#" class="font-medium">About</a></li>
+              <li class="px-4 text-white"><a href="#" class="font-medium">Careers</a></li>
+              <li class="px-4 text-white"><a href="#" class="font-medium">Events</a></li>
+              <li class="px-4 text-white"><a href="#" class="font-medium">Products</a></li>
+              <li class="px-4 text-white"><a href="#" class="font-medium">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="px-20 pt-5 pb-10">
+          <p class="text-gray-400">© 2022 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  <!-- 
 
   See all
 
@@ -49,11 +171,13 @@
   Products
   Support
 
-  © 2021 Loopstudios. All rights reserved.
+  © 2021 Loopstudios. All rights reserved. -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  </main>
 </body>
 </html>

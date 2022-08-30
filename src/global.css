@@ -1,0 +1,50 @@
+
+/* Primary Colors */
+:root{
+    --ls-c-white: hsl(0, 0%, 100%);
+    --ls-c-black: hsl(0, 0%, 0%);
+    --ls-c-dark-gray: hsl(0, 0%, 55%);
+    --ls-c-v-darkgray: hsl(0, 0%, 41%);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+body{
+    min-height: 100vh;
+    color: var(--ls-c-black);
+    font-size: 15px;
+}
+
+
+@font-face {
+    font-family: 'Alata', 'Josefin Sans';
+    src: url('./font_family/Alata-Regular.ttf') format('truetype'),
+         url('./font_family/Alata-Regular.woff') format('woff'),
+         url('./font_family/JosefinSans-Light.ttf')  format('truetype'),
+         url('./font_family/JosefinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--ls-c-white);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  nav ul li:hover::after{
+    width: 60%;
+  }
+  
