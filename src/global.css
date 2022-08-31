@@ -16,6 +16,19 @@
     font-weight: normal;
 }
 
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 body{
     min-height: 100vh;
     color: var(--ls-c-black);
@@ -47,4 +60,33 @@ nav ul li::after{
   nav ul li:hover::after{
     width: 60%;
   }
+
+  .sidenav {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background: var(--ls-c-black);
+    overflow-x: hidden;
+    padding-top: 50px;
+  }
   
+
+  .hide-for-desktop, .hide-for-mobile{
+    display: none;
+  }
+  
+  .header-menu > span{
+    display: block;
+    width: 1.625rem;
+    height: 0.125rem;
+    background-color: var(--ls-c-white);
+  }
+
+  span:not(:last-child){
+    margin-bottom: 6px;
+  }
+
