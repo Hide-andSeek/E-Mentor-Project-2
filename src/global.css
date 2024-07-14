@@ -70,7 +70,6 @@ nav ul li::after{
     top: 0;
     right: 0;
     background: var(--ls-c-black);
- 
     padding-top: 50px;
   }
   
@@ -78,7 +77,17 @@ nav ul li::after{
   .hide-for-desktop, .hide-for-mobile{
     display: none;
   }
-  
+  a {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .label {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
   .header-menu > span{
     display: block;
     width: 1.625rem;

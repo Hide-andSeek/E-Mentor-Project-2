@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="Loopstudios landing page
+">
     <link
       rel="icon"
       type="image/png"
@@ -14,8 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Loopstudios</title>
   </head>
   <body>
@@ -32,9 +37,11 @@
         src="./images/mobile/image-hero.jpg"
         alt=""
       />
-      <nav class="flex justify-between mx-10 lg:mx-20 py-10 z-1">
+      <nav class="flex justify-between mx-5 lg:mx-20 py-10 z-1">
         <div>
-          <img src="./images/logo.svg" alt="Loop Studio" />
+          <a href="/">
+            <img class="w-full max-w-[140px]" src="./images/logo.svg" alt="Loop Studio" />
+          </a>
         </div>
         <div class="hidden md:block">
           <ul class="flex">
@@ -57,7 +64,7 @@
         </div>
 
         <!-- Menu Burger -->
-        <div class="py-5 px-10 sidenav hide-for-desktop" id="mySidenav">
+        <div class="py-5 px-10 sidenav md:hidden" id="mySidenav">
           <div class="flex justify-between pb-28">
             <img
               class="pt-5 w-3/5 h-3/5"
@@ -71,7 +78,7 @@
               >&times;</a
             >
           </div>
-          <ul class="reveal fade-bottom uppercase">
+          <ul class="reveal fade-bottom uppercase fontJosefin">
             <li class="py-2 text-3xl text-white">
               <a href="/" class="font-thin">About</a>
             </li>
@@ -106,7 +113,7 @@
 
     <main>
       <div
-        class="reveal fade-bottom block justify-center px-0 pt-4 block lg:pt-36 lg:px-20 lg:flex lg:px-20 lg:text-left"
+        class="relative reveal fade-bottom block px-0 pt-4 block lg:pt-36 lg:px-20 lg:flex lg:justify-center lg:px-32 lg:text-left lg:max-h-full"
       >
         <div class="bg-fixed">
           <img
@@ -115,20 +122,20 @@
             alt=""
           />
           <img
-            class="block mr-auto ml-auto mt-72 lg:mt-40 px-4 lg:px-14 lg:hidden"
+            class="block mr-auto ml-auto mt-20  lg:mt-40 px-4 lg:px-14 lg:hidden"
             src="./images/mobile/image-interactive.jpg"
             alt=""
           />
         </div>
         <div
-          class="p-3 text-center pt-4 lg:pt-24 lg:text-left lg:right-28 lg:w-4/6"
+          class="relative p-3 text-center pt-4 lg:pt-36 lg:text-left lg:right-28 lg:w-4/6"
         >
           <h2
-            class="px-4 font-thin bg-white pt-10 pb-5 text-3xl uppercase lg:px-4 lg:text-5xl lg:text-5xl"
+            class="relative px-4 font-thin bg-white pt-10 pb-5 text-3xl uppercase lg:px-20 lg:text-5xl lg:text-5xl"
           >
             The leader in interactive VR
           </h2>
-          <p class="px-4 bg-white pb-2 lg:px-20 lg:pb-5">
+          <p class="font-fontJosefin px-4 bg-white pb-2 lg:px-20 lg:pb-5">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -159,7 +166,7 @@
         <div class="reveal fade-left block mr-auto ml-auto">
           <a
             href="/"
-            class="text-white transition ease-in-out hover:text-black"
+            class="text-white transition ease-in-out hover:text-black inline-block "
           >
             <img
               class="hover:opacity-20 z-0 transition ease-in-out delay-150 hidden lg:block lg:block"
@@ -172,7 +179,7 @@
               src="./images/mobile/image-deep-earth.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl md:text-3xl lg:text-4xl font-thin uppercase">
                 Deep <br />
                 Earth
@@ -197,7 +204,7 @@
               src="./images/mobile/image-night-arcade.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl lg:text-4xl font-thin uppercase">
                 Night <br />
                 Arcade
@@ -222,7 +229,7 @@
               src="./images/mobile/image-soccer-team.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl lg:text-4xl font-thin uppercase">
                 Soccer <br />
                 Team VR
@@ -247,7 +254,7 @@
               src="./images/mobile/image-grid.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl lg:text-4xl font-thin uppercase">
                 The <br />
                 Grid
@@ -272,7 +279,7 @@
               src="./images/mobile/image-from-above.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl lg:text-4xl font-thin uppercase">
                 From Up <br />
                 Above VR
@@ -297,7 +304,7 @@
               src="./images/mobile/image-pocket-borealis.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl lg:text-4xl font-thin uppercase">
                 Pocket <br />
                 Borealis
@@ -322,7 +329,7 @@
               src="./images/mobile/image-curiosity.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl lg:text-4xl font-thin uppercase">
                 The <br />
                 Curiosity
@@ -347,7 +354,7 @@
               src="./images/mobile/image-fisheye.jpg"
               alt=""
             />
-            <div class="absolute bottom-0 py-4 lg:py-16 pl-10 z-1">
+            <div class="relative -top-[72px] -right-4 lg:-top-36 lg:-right-8">
               <p class="text-2xl lg:text-4xl font-thin uppercase">
                 Make it <br />
                 Fisheye
